@@ -26,21 +26,67 @@
 	</header>
 	<main>
 		<section>
-			<h1 class="popular">A FANTASTIC ENGAGING HEADLINE GOES HERE</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quia id quam ullam nemo, excepturi quidem explicabo in ducimus ex asperiores mollitia odio ratione repellendus, hic dolor voluptatem consequatur commodi doloribus. Veritatis odit nihil est omnis iusto, dolor in hic. Nesciunt quaerat inventore, cupiditate eligendi eum adipisci, tempore animi fugiat</p>
+			<h1 class="headline">A FANTASTIC ENGAGING HEADLINE GOES HERE</h1>
+			<div class="datetime"><img src="images/authoricon.png">
+				<h4>Erik Jacobsen</h4>
+			</div>
+			<div class="javasc">
+				<script language="javascript"> 
+					months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+					var d=new Date();
+					var weekday=new Array(7);
+					weekday[0]="Sunday";
+					weekday[1]="Monday";
+					weekday[2]="Tuesday";
+					weekday[3]="Wednesday";
+					weekday[4]="Thursday";
+					weekday[5]="Friday";
+					weekday[6]="Saturday";
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non a facilis mollitia nemo amet animi eos, quisquam molestias. Tempora ut neque accusamus laudantium saepe nam, ex, ipsum magni iusto numquam laborum voluptates dolores quae reiciendis, sed nisi. Voluptatibus nam, cos ducimus obcaecati numquam odit quasi esse. Aliquam perferendis corporis modi quis ut maiores saepe pariatur assumenda quidem, nihil incidunt labore illo placeat maxime. Blanditiis hic ipsa, deleniti illo, autem nulla minus ratione provident sapiente sunt earum commodi, tenetur iure! Quas vel illo sequi, nisi voluptatibus, alias nemo facere fugit nam, repellendus eaque voluptatum? Asperiores animi excepturi sequi eaque.
+					var d = new Date();
+					(d.getFullYear());
+
+
+					var theDate = new Date(document.lastModified); 
+					theDate.setTime((theDate.getTime()+(60*60)) ) 
+					with (theDate) { 
+					document.write("On "+weekday[getDay()]+' '+months[getMonth()]+' '+getDate()+' '+d.getFullYear()+' '+getHours()+':'+getMinutes()+"") 
+					} 
+				</script>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quia id quam ullam nemo, excepturi quidem explicabo in ducimus ex asperiores mollitia odio ratione repellendus, hic dolor voluptatem consequatur commodi doloribus. Veritatis odit nihil est omnis iusto, dolor in hic. Nesciunt quaerat inventore, cupiditate eligendi eum adipisci, tempore animi fugiat
+			</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non a facilis mollitia nemo amet animi eos, quisquam molestias. Tempora ut neque accusamus laudantium saepe nam, ex, ipsum magni iusto numquam laborum voluptates dolores quae reiciendis, sed nisi.<a href="http://www.google.com" target_blank>Voluptatibus</a> 
+			<p class="interruptus">WOAH, THAT'S RADICAL!</p>
+			<p>obcaecati numquam odit quasi esse. Aliquam perferendis corporis modi quis ut maiores saepe pariatur assumenda quidem, nihil incidunt labore illo placeat maxime. Blanditiis hic ipsa, deleniti illo,
+			<span class="tooltip"><a href="http://www.google.com">autem nulla(rollover)</a>
+				<span class="tooltiptext">Check out this hovering popup that is working as I had hoped just yet.
+				</span>
+			</span>minus ratione provident sapiente sunt earum commodi, tenetur iure! quidem, nihil incidunt labore illo placeat maxime. BlanditQuas vel illo sequi, nisi voluptatibus, alias nemo facere fugit nam, repellendus eaque voluptatum? Asperiores animi excepturi sequi eaque.
 			</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit amet aperiam asperiores aliquid aut fuga deleniti officiis, quaerat, aliquam velit pariatur quibusdam. Itaque quas similique nulla accusantium, necessitatibus vero obcaecati dignissimos quis. Iure ratione itaque cumque quidem nulla vel laboriosam?</p>
-		</section>	
+			<span class="buttons">	
+				<img src="images/readcomments.png">
+				<img src="images/readlater.png">
+				<img src="images/share.png">
+			</span>
+		</section>
 		<aside>
-			<img src="images/bucks.jpg"/>
+			<div class="mugs"><img src="images/mug.png">
+				<h4>Erik Jacobsen</h4>
+				<ul class="socialtext">
+					<li>Twitter</li>
+					<li>Facebook</li>
+					<li>Instagram</li>
+				</ul>
+			</div>
+			<div class="starbucks"></div>
 			<h3>SIDEBAR SECTION HEADING</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptatibus iure sequi accusamus dolorem sunt ullam, rem laboriosam doloremque suscipit ad qui beatae libero modi quae amet facilis quis repudiandae. Excepturi aspernatur a consectetur officiis velit molestias tenetur aut tempora, cumque enim amet error, dignissimos expedita corrupti, impedit fugiat natus.</p>
 		</aside>
 	</main>
 	<div class="popular">
-		<h1 class ="popular">MOST POPULAR POSTS</h1>
+		<h1 class ="pophead">MOST POPULAR POSTS</h1>
 	</div>
 	<footer>
 		<div class="photos">
@@ -50,6 +96,7 @@
 			<span class="pic">OH COOL A POST</span>
 		</div>
 		<div class="smallsocial">
+			<div class="tiy"></div>
 			<h6>The Ironyard Copyright 2017, All Rights Reserved</h6>
 			<div class="navitem">Nav Item 1</div>
 			<div class="navitem">Nav Item 2</div>
