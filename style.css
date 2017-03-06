@@ -20,8 +20,8 @@ header{
 	background-repeat: no-repeat;
 	background-position: 0px, -200px;
 	margin-bottom: 0px;
-}
 
+}
 .navbar{
 	display: flex;
 	flex-wrap: wrap;
@@ -43,23 +43,32 @@ header{
 	height:200px;
 	margin:0px;
 	line-height: 64px;
+	
+
 }
 
 .about{
 	display: flex;
 	justify-content: flex-end;
 	align-content: space-between;
-	font-weight: bold;
+	font-weight: normal;
 	height:200px;
 	margin:0px;
 	line-height: 64px;
+
+
 }
  .about span{
 	margin-right: 10px;
+	
 }
+
+
 
 .blog span{
 	margin-left: 10px;
+
+
 }
 .navbar h1, .navbar h6{
 	display: flex;
@@ -80,14 +89,15 @@ header{
 	font-family: Helvetica, Arial, Tahoma, sans-serif;
 	font-size: 64px;
 
-}
 
+}
 .fa-search{
 	padding: 24px 100px 0px 0px;
 
-}
 
+}
 .fa-coffee{
+	font-size: 40px;
 	padding: 0px 0px 0px 100px;
 	
 }
