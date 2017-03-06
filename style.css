@@ -22,6 +22,18 @@ header{
 	margin-bottom: 0px;
 
 }
+@media(max-width:768px){
+	header{
+		display: block;
+		height: 200px;
+		width: 400px;
+		margin:auto;
+		background-image: linear-gradient(to bottom, rgba(53,28,14, .15) 0%,rgba(53,28,14, .65)100%),url("images/30121-coffee-beans-2560x1600-photography-wallpaper.jpg");
+		background-repeat: no-repeat;
+		background-position: 0px, -200px;
+		margin-bottom: 0px;
+	}
+}
 .navbar{
 	display: flex;
 	flex-wrap: wrap;
@@ -35,6 +47,19 @@ header{
 	width: 1368px;
 	
 }
+@media(max-width: 768px){
+	.navbar{
+		display: flex;
+		justify-content: center;
+		color:rgba(212,139,80, .75);
+		background: transparent;
+		font-family: Helvetica, Arial, Tahoma, sans-serif;
+		font-size: 12px;
+		height:100px;
+		width: 400px;
+		line-height: 24px;
+	}
+}
 
 .blog{
 	display: flex;
@@ -45,6 +70,14 @@ header{
 	line-height: 64px;
 	
 
+}
+@media(max-width: 768px){
+	.blog{
+		display: block;
+		height:100px;
+		margin:0px;
+		line-height: 0px;
+	}
 }
 
 .about{
@@ -58,17 +91,41 @@ header{
 
 
 }
+
+@media(max-width: 768px){
+	.about{
+		display: flex;
+		justify-content: flex-start;
+		align-content: center;
+		font-weight: normal;
+		margin: auto;
+		height:100px;
+		margin:0px;
+		line-height: 48px;
+
+	}
+}
  .about span{
 	margin-right: 10px;
 	
 }
-
+@media(max-width: 768px){
+	.about span, .blog span{
+		margin-left: 0px;
+	}
+}
 
 
 .blog span{
 	margin-left: 10px;
 
 
+}
+
+@media(max-width: 768px){
+	.blog span{
+		display: none;
+	}
 }
 .navbar h1, .navbar h6{
 	display: flex;
@@ -89,7 +146,12 @@ header{
 	font-family: Helvetica, Arial, Tahoma, sans-serif;
 	font-size: 64px;
 
+}
 
+@media(max-width: 768px){
+	.navbar h1{
+		font-size: 24px;
+	}
 }
 .fa-search{
 	padding: 24px 100px 0px 0px;
@@ -108,9 +170,19 @@ main{
 	height: 1000px;
 	width: 1368px;
 	margin:auto;
-	border:3px solid white;
 	background: white;
 	
+}
+
+@media(max-width: 768px){
+	main{
+		display: flex;
+		justify-content: space-around;
+		height: 900px;
+		width: 400px;
+		margin:auto;
+		background: white;
+		}
 }
 
 .headline{
@@ -119,6 +191,20 @@ main{
 	font-size: 64px;
 	color:rgba(212,139,80, .99);
 	margin:20px 0px 0px 0px;
+}
+
+@media(max-width: 768px){
+	.headline{
+		font-size: 24px;
+		text-align: center;
+	}
+}
+
+@media(max-width: 768px){
+	.datetime img, .datetime h4, .javasc, section p, .buttons img, aside, li{
+		float: none;
+		width: auto;
+	}
 }
 .datetime img{
 	float: left;
@@ -152,16 +238,36 @@ section{
 	width: 55%;
 }
 
+@media(max-width: 768px){
+	section{
+		height:800px;
+		width: auto;
+	}
+}
+
 section p{
 	float: left;
 	margin-bottom: 35px;
 
 }
 
+@media(max-width: 768px){
+	section p{
+		margin-bottom:15px;
+	}
+}
+
 .buttons span{
 	display: inline-block;
 	clear: left;
 
+}
+
+@media(max-width: 768px){
+	.buttons span{
+		margin: auto;
+		text-align: center;
+	}
 }
 
 .buttons img{
@@ -173,12 +279,28 @@ section p{
 
 }
 
+@media(max-width: 768px){
+	.buttons img{
+		width: 100px;
+		height: 25px;
+		margin-top: 5px;
+		margin-right: 5px;
+	}
+}
+
 aside{
 	float: right;
 	clear: right;
 	margin: 0 1.5%;
 	width: 26%;
 }
+
+@media(max-width: 768px){
+	aside{
+		display: none;
+	}
+}
+
 
 .starbucks{
 	display: inline-block;
@@ -210,7 +332,6 @@ aside{
 	width:300px;
 	padding-left: 60px;
 	
-	
 }
 ul{
 	padding-left: 0px;
@@ -225,6 +346,12 @@ li{
 	margin:auto;
 	margin:0px 15px 0px 0px;
 
+}
+
+@media(max-width: 768px){
+	.mugs, .mugs h4, ul, li, .socialtext{
+		display: none;
+	}
 }
 .interruptus{
 	font-family: Helvetica, Arial, Tahoma, sans-serif;
@@ -247,6 +374,7 @@ h3{
 	font-family: Helvetica, Arial, Tahoma, sans-serif;
 	color:rgba(212,139,80, .99);
 }
+
 footer{
 	display: flex;
 	flex-wrap: wrap;
@@ -254,8 +382,18 @@ footer{
 	width: 1368px;
 	margin:auto;
 	background: black;
+}
 
-	
+@media(max-width: 768px){
+	footer{
+		display: block;
+		float: none;
+		height: 200px;
+		width: 400px;
+		align-content: center;
+		margin:auto;
+		background:  white;
+	}
 }
 .pophead{
 	display: block;
@@ -273,12 +411,30 @@ footer{
 
 }
 
+@media(max-width: 768px){
+	.pophead{
+		font-size: 24px;
+		width: 400px;
+		height: 50px;
+		line-height: 50px;
+}
+}
+
 .photos{
 	display:flex;
 	height: 300px;
 	width:100%;
 	background: white;
 
+}
+
+@media(max-width: 768px){
+	.photos{
+		display: block;
+		float:none;
+		width: auto;
+		height: 1300px;
+	}
 }
 
 .pic{
@@ -292,6 +448,19 @@ footer{
 	width: 25%;
 	padding-left: 15px;
 
+}
+
+@media(max-width: 768px){
+	.pic{
+		display: block;
+		float: none;
+		background-color: white;
+		font-size: 18px;
+		margin: auto;
+		margin-bottom: 25px;
+		width: 350px;
+		padding: 0px;
+	}
 }
 .pic:first-child{
 	background-image: linear-gradient(to bottom, rgba(53,28,14, .65) 0%,rgba(53,28,14, .65)100%),url("images/beans.jpg");
@@ -325,6 +494,16 @@ footer{
 	background: rgb(53,28,14);
 }
 
+@media(max-width: 768px){
+	.smallsocial{
+		height:200px;
+		display: block;
+		float: none;
+
+		margin: auto;
+	}
+}
+
 .smallsocial h6{
 	padding-right: 300px;
 	color:rgba(212,139,80, .75);
@@ -334,12 +513,29 @@ footer{
 	line-height: 100px;
 }
 
+@media(max-width: 768px){
+	.smallsocial h6{
+		padding-right:0px;
+		text-align: center;
+		line-height: 50px;
+	}
+}
+
 .tiy{
 	display: flex;
 	height: 100px;
 	width: 100px;
 	overflow: none;
 	background-image: linear-gradient(to bottom, rgba(53,28,14, .85) 0%,rgba(53,28,14, .85)100%),url("images/the-iron-yard-logo.png");
+}
+
+@media(max-width: 768px){
+	.tiy{
+		display: block;
+		float: none;
+		margin: auto;
+		align-content: center;
+	}
 }
 
 .navitem{
@@ -351,6 +547,19 @@ footer{
 	padding-right: 10px;
 	height: 16px;
 	margin-top: 40px;
+}
+
+@media(max-width: 768px){
+	.navitem{
+		display: inline-block;
+		float: none;
+		text-align: center;
+		align-content: center;
+		width: auto;
+		margin:0px;
+		
+
+	}
 }
 
 .navitem:last-child{
